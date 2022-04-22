@@ -44,13 +44,13 @@ User.init(
     },  
     //pass in the imported sequelize connection
     sequelize,
-    // don't automatically create timestamp fields
+    // do not automatically create timestamp fields
     timestamps: false,
-    // don't plurallize name of database table
+    // do not plurallize table name
     freezeTableName: true,
-    // use underscores instead of camel-casing
+    // use underscore
     underscored: true,
-    // make it so our model name stays in lowercase in the database
+    // stay lowercase
     modelName: 'user'
   }
 );
